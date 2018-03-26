@@ -12,6 +12,7 @@ namespace ColorEqualsRepro
 	public class MainPage : ContentPage
 	{
 		readonly Button _toggleColorButton;
+
 		public MainPage()
 		{
 			_toggleColorButton = new Button
@@ -24,6 +25,7 @@ namespace ColorEqualsRepro
 
 			Content = _toggleColorButton;
 		}
+
 		void HandleColorButtonClicked(object sender, EventArgs e)
 		{
 			if (BackgroundColor.Equals(ColorConstants.LightBlue))
